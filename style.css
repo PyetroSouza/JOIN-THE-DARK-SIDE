@@ -1,0 +1,40 @@
+:root {
+    --primary-color: #000000;
+}
+
+body {
+    height: auto;
+    background-color: var(--primary-color);
+    display: flex;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 33px;
+    font-size: 30px;
+    color: white;
+
+}
+.textos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+}
+
+.texto1 {
+    font-family: Anton, sans-serif;
+
+}
+
+.texto2 {
+    font-family: Montserrat, sans-serif;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
