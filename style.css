@@ -6,14 +6,14 @@ body {
     margin: 0;
     background-color: var(--primary-color);
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    align-content: center;
-    padding: 30px 80px;
+    align-items: center;
+    padding: 50px 80px;
 
 }
 
@@ -24,9 +24,8 @@ header {
 }
 
 .logo img {
-    width: 10px;
-    height: 10px;
-    display: block;
+    width: 75px;
+    height: 75px;
 }
 
 .logo h1{
@@ -34,13 +33,13 @@ header {
   padding: 0;
   line-height: 1;
   font-family: Anton, sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   letter-spacing: 1px;
 }
 
 .textos {
     display: flex;
-    align-items: center;
+    align-content: center;
     gap: 50px;
 }
 
@@ -48,9 +47,7 @@ header {
     font-family: Montserrat, sans-serif;
     display: flex;
     gap: 40px;
-    font-size: 20px;
-
-
+    font-size: 25px;
 }
 
 main {
@@ -58,36 +55,54 @@ main {
   align-items: center;
   justify-content: flex-start;
   height: 73vh;
-  padding-left: 165px;
+  padding-left: 165px; 
   color: white;
 }
 .container {
-display: flex;
+  display: flex;
   flex-direction: column;
   max-width: 400px;
   gap: 20px;
 }
 .container h1 {
   font-family: Anton, sans-serif;
-  font-size: 60px;
+  font-size: 100px;
   font-weight: 700;
   margin: 0;
   line-height: 1;
 }
 .container h2{
   font-family: Anton, sans-serif;
-  font-size: 60px;
+  font-size: 100px;
   font-weight: 700;
   margin: 0;
   line-height: 1;
 }
 
-.buttom{
-  width: 120px;
-  padding: 10px 0;
-  background: transparent;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  letter-spacing: 1px;
+.container p{
+  display: flex;
+  padding: 15px 0px 0px 0px;
+  font-size: 20px;
+  line-height: 1.6;
+
+}
+
+.botao{
+  width: 130px;
+  height: 50px;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 8px 8px #30544A ;
+
+}
+.botao botton{
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+}
+img{
+  width: 500px;
+  border-radius: 0 200px 200px 0;
+  object-fit: cover;
 }
