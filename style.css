@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #000000;
+    --primary-color: black;
 }
 
 body {
@@ -101,8 +101,17 @@ main {
   font-family: Montserrat, sans-serif;
   font-size: 20px;
 }
-img{
-  width: 500px;
-  border-radius: 0 200px 200px 0;
+.imagem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.imagem img {
+  width: 533x;
+  height: 614px;
+  filter: brightness(0.7)contrast(1.0);
+  opacity: 0.8;
   object-fit: cover;
 }
