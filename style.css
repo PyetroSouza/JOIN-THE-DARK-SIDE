@@ -104,15 +104,15 @@ main {
 .imagem {
   flex: 1;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;  
-  
+  justify-content: space-around;
+  align-items: center;  
 }
 .imagem img {
-  width: 533x;
-  height: 614px;
+  width: 1033x;
+  height: 914px;
   filter: brightness(0.7)contrast(1.0);
   opacity: 0.8;
   object-fit: cover;
+  gap: 100px;
+
 }
