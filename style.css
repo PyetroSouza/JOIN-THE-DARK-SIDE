@@ -55,7 +55,7 @@ main {
   align-items: center;
   justify-content: flex-start;
   height: 73vh;
-  padding-left: 165px; 
+  padding-left: 165px;
   color: white;
 }
 .container {
@@ -86,20 +86,25 @@ main {
   line-height: 1.6;
 
 }
+.container botao{
+    display: flex;
+  flex-direction: column;
+}
 
 .botao{
   width: 130px;
   height: 50px;
   background-color: var(--primary-color);
+  box-shadow: 0 0 8px 8px #30544A ;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 8px 8px #30544A ;
 
 }
 .botao botton{
   font-family: Montserrat, sans-serif;
   font-size: 20px;
+
 }
 .imagem {
   flex: 1;
@@ -116,3 +121,43 @@ main {
   gap: 100px;
 
 }
+@media (max-width: 1024px) {
+  header{
+    padding: 50px 50px;
+  }
+  main{
+    padding-left: 100px;
+  }
+  .logo img{
+    width: 55px;
+    height: 55px;
+  }
+  .logo h1{
+    font-size: 20px;
+  }
+  .textos{
+    gap:20px;
+  }
+  .textos span{
+    font-size: 20px;
+    gap: 10px;
+  }
+  .container botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 200px;
+
+  }
+  .container h1{
+    font-size: 65px;
+  }
+  .container h2{
+    font-size: 65px;
+  }
+
+  }
+  .imagem img{
+    width: 350px;
+    height: 500px;
+  }
