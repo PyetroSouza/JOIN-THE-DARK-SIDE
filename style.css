@@ -109,14 +109,15 @@ main {
 .imagem {
   flex: 1;
   display: flex;
-  justify-content: space-around;
+  padding-right: 250px;
+  justify-content: flex-end;
   align-items: center;  
 }
 .imagem img {
-  width: 1033x;
-  height: 914px;
+  width: 1040x;
+  height: 900px;
   filter: brightness(0.7)contrast(1.0);
-  opacity: 0.8;
+  opacity: 0.6;
   object-fit: cover;
   gap: 100px;
 
@@ -129,8 +130,8 @@ main {
     padding-left: 100px;
   }
   .logo img{
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
   }
   .logo h1{
     font-size: 20px;
@@ -142,12 +143,8 @@ main {
     font-size: 20px;
     gap: 10px;
   }
-  .container botao{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 200px;
-
+  .container{
+    gap: 0px;
   }
   .container h1{
     font-size: 65px;
@@ -155,9 +152,45 @@ main {
   .container h2{
     font-size: 65px;
   }
-
+  .container p{
+    font-size: 15px;
+    padding: 0px 0px 0px 0px;
+  }
+  .imagem{
+    display: flex;
+    padding-left: 100px;
   }
   .imagem img{
-    width: 350px;
-    height: 500px;
+    width: 360px;
+    height: 400px;
   }
+}
+@media (max-width: 480px){
+  header{
+    padding: 20px 30px;
+  }
+  .logo img{
+    width: 35px;
+    height: 35px;
+  }
+  main{
+    padding-left: 35px;
+  }
+  .textos span{
+    display: none;
+  }
+  .container{
+    gap: 10px;
+  }
+  .container h1, .container h2{
+    font-size: 35px;
+  }
+  .container p{
+    font-size: 13px;
+  }
+  .imagem img{
+    width: 200px;
+    height: 250px;
+    gap: 50px;
+  }
+}  
