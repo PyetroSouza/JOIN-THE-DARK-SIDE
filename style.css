@@ -4,6 +4,8 @@
 
 body {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background-color: var(--primary-color);
     color: white;
     font-family: Montserrat, sans-serif;
@@ -13,7 +15,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 80px;
+    padding: 50px 80px; 
 
 }
 
@@ -53,81 +55,67 @@ header {
 main {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   height: 73vh;
-  padding-left: 165px;
+  
   color: white;
+}
+.container60 {
+  display: flex;
+  height: 100%;
+  width: 60%;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 165px;
+  gap: 7%;
 }
 .container {
   display: flex;
   flex-direction: column;
   max-width: 400px;
-  gap: 20px;
+  gap: 30px;
 }
 .container h1 {
   font-family: Anton, sans-serif;
-  font-size: 100px;
-  font-weight: 700;
+  font-size: 150px;
+  font-weight: 700px;
   margin: 0;
   line-height: 1;
-}
-.container h2{
-  font-family: Anton, sans-serif;
-  font-size: 100px;
-  font-weight: 700;
-  margin: 0;
-  line-height: 1;
+  white-space: nowrap;
 }
 
 .container p{
-  display: flex;
-  padding: 15px 0px 0px 0px;
-  font-size: 20px;
-  line-height: 1.6;
-
-}
-.container botao{
-    display: flex;
-  flex-direction: column;
+  font-size: 30px;
 }
 
 .botao{
-  width: 130px;
-  height: 50px;
+  width: 230px;
+  height: 100px;
   background-color: var(--primary-color);
   box-shadow: 0 0 8px 8px #30544A ;
   display: flex;
   justify-content: center;
   align-items: center;
-
-}
-.botao botton{
   font-family: Montserrat, sans-serif;
-  font-size: 20px;
+  font-size: 35px;
 
 }
+
 .imagem {
   flex: 1;
   display: flex;
-  padding-right: 250px;
-  justify-content: flex-end;
+  height: 100%;
+  width: 40%;
+  justify-content: center;
   align-items: center;  
 }
-.imagem img {
-  width: 1040x;
-  height: 900px;
-  filter: brightness(0.7)contrast(1.0);
-  opacity: 0.6;
-  object-fit: cover;
-  gap: 100px;
-
+.img-persona{
+  height: 90%;
+  width: 90%;
 }
+
 @media (max-width: 1024px) {
   header{
     padding: 50px 50px;
-  }
-  main{
-    padding-left: 100px;
   }
   .logo img{
     width: 50px;
@@ -147,23 +135,24 @@ main {
     gap: 0px;
   }
   .container h1{
-    font-size: 65px;
+    font-size: 70px;
   }
-  .container h2{
-    font-size: 65px;
+ .imagem{
+  position: relative;
+ }
+  .container60 {
+    padding-left: 75px;
+    position: relative;
   }
-  .container p{
-    font-size: 15px;
-    padding: 0px 0px 0px 0px;
-  }
-  .imagem{
+  button {
     display: flex;
-    padding-left: 100px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    bottom: 148px;
   }
-  .imagem img{
-    width: 360px;
-    height: 400px;
-  }
+  
+  
 }
 @media (max-width: 480px){
   header{
