@@ -72,19 +72,19 @@ main {
   display: flex;
   flex-direction: column;
   max-width: 400px;
-  gap: 30px;
+  gap: 25px;
 }
 .container h1 {
   font-family: Anton, sans-serif;
-  font-size: 150px;
+  font-size: 135px;
   font-weight: 700px;
-  margin: 0;
   line-height: 1;
   white-space: nowrap;
 }
 
 .container p{
-  font-size: 30px;
+  font-size: 18px;
+  overflow: auto;
 }
 
 .botao{
@@ -132,10 +132,14 @@ main {
     gap: 10px;
   }
   .container{
-    gap: 0px;
+    gap: 12px;
   }
   .container h1{
-    font-size: 70px;
+    font-size: 80px;
+  }
+  .container p{
+    font-size: 23px;
+     
   }
  .imagem{
   position: relative;
@@ -145,8 +149,8 @@ main {
     position: relative;
   }
   button {
-    display: flex;
     position: absolute;
+    display: flex;
     align-items: center;
     justify-content: center;
     bottom: 148px;
